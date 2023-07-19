@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fading Content</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, beatae autem! Soluta quasi molestias reiciendis molestiae? Quae provident et neque quaerat omnis exercitationem quidem? Id repellendus ducimus nihil dolores sequi!</p>
+    <button>Fadecontent</button>
+    <script>
+        $("button").click(function(){
+            /*
+            $("p").fadeOut();//content will fade out at normal speed
+           $("p").fadeOut("slow");//content will fade out at slow rate...
+           */
+
+          //fadeout functions-visible content will become invisible
+          /*
+          $("p").fadeOut(function(){
+            alert("content has faded out");
+          });
+        });
+        */
+       //fadein()-invisible content will become visible
+    $("p").fadeIn();
+      alert("fadeIn() method is finished!");
+    });
+    
+    </script>
+</body>
+</html>

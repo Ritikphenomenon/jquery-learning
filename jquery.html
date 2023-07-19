@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery include</title>
+    <!--we can use the jquery through the embedded link, but it makes the little bit, to get the links,u can use hosted libraries-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        //this jQuery variable ,by deafult is given by the link..
+        //this method of using jquery by google api , is not suitable because it is slow.
+        if(jQuery=="undefined"){
+            alert("jquery not included");
+        }
+        else{
+            alert("jquery included");
+        }
+    </script>
+</body>
+</html>

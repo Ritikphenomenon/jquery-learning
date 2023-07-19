@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <script>
+        var str="This is regular expression";
+      /*  var regx=/regular/i;//to avoid case sensitiveness of capital I and i.*/
+      //to find how many occurence does the word regular have..
+      var regx=/regular/g;
+        var result=str.match(regx);
+        alert(result);
+    </script>
+</body>
+</html>

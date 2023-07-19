@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changing website style</title>
+    <script src="jquery.js"></script>
+    <style>
+        #circle{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border-radius: 50%;
+        }
+        #square{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <div id="square"></div>
+    <div id="square"></div>
+    <script>
+        /*
+     $("#circle").click(function(){
+       alert("green circle is pick");
+       $("#circle").css("background-color","red");
+       $("#circle").css("width","250px");
+     });
+     */
+    //shape that user pick want to be dissappear
+    $("div").click(function(){
+        //but main problem is that all are dissapearing
+       /*$("div").css("display","none");*/
+        /*to avoid this problem,we are using this keyword,the this keyword actually deleting, that keys which we are pointing or clicking.*/
+        $(this).css("display","none");
+
+    });
+    </script>
+</body>
+</html>
